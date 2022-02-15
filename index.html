@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bookshelf Apps</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1 align="center">Bookshelf Apps</h1>
+        </header>
+
+        <div class="wrapper">
+            <div class="container bg-wheat shadow">
+                <h2 class="container-header text-center">Masukkan Buku Baru</h2>
+                <form action="#" class="form" id="form">
+                    <div class="form-group">
+                        <label for="title">Judul</label>
+                        <input type="text" name="title" id="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="author">Penulis</label>
+                        <input type="text" name="author" id="author" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Tahun</label>
+                        <input type="number" name="year" id="year" required>
+                    </div>
+                    <div class="input_inline">
+                        <label for="inputBookIsComplete">Selesai dibaca</label>
+                        <input type="checkbox" id="inputBookIsComplete">
+                    </div>
+                    <button type="submit" name="submit" class="btn-submit">Masukkan Buku ke <b>rak</b></button>
+                </form>
+            </div>
+
+            <div class="container bg-wheat shadow">
+                <section class="search_section">
+                    <h2 class="container-header text-center">Cari Buku</h2>
+                    <form action="#" class="form-search" id="searchBook">
+                        <div class="form-group form-title">
+                            <label for="searchBook">Judul</label>
+                            <input type="text" name="search" id="search">
+                            <button type="submit" name="submit" class="btn-submit">Cari</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+            <div class="container">
+                <h2 class="container-header">Belum Selesai Dibaca</h2>
+                <div class="list-item" id="uncompleteBookshelfList">
+
+                </div>
+            </div>
+
+            <div class="container">
+                <h2 class="container-header">Sudah Selesai Dibaca</h2>
+                <div class="list-item" id="completeBookshelfList">
+
+                </div>
+            </div>
+        </div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
